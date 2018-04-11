@@ -41,3 +41,18 @@ class ShipMain1 {
     * The information that can be stored in a variable is determined by the variable's type, which is always immediately written before its name in its declaration.
     * So the type of the `argo` variable is `Ship`.
     * Some varibles can store an `item` of numerical data, while others store an object reference.
+* It is important to note that `argo` is not a `Ship` Object; neither does defining a variable automatically create an object.
+* Object creation is a separate operation and is performed in the second statement:
+```java
+// Construct a new Ship object.
+argo = new Ship();
+```
+* Object Creation is also called _object construction_.
+* This statement is a Java _assignment statement_.
+* An _assignment statement_ is used to store something into a `variable`.
+    * It takes what is on the right side of the _assignment operator_ (=) and stores it into a variable whose name is given on the left of the assignment operator.
+* So what is produced on the right hand side? `... = new Ship();`
+* The right-hand side contains the reserved word `new`, the `Ship` class name again, a pair of empty parentheses and the customary terminating semicolon.
+* _new_ - The way in which an object of a particular class is constructed.
+    * Because an _object_ is also known as _an instance_, _object construction_ is also known as _instantiation_.
+    * Use of _new_ to construct an object results in an _object reference value_ for the new object on the right-hand side of the assignment.
